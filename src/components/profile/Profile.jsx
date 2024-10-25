@@ -1,0 +1,78 @@
+import React, {useEffect, useRef} from 'react';
+import './Profile.css';
+import {init} from "ityped";
+
+const Profile = () => {
+    const textRef = useRef();
+    useEffect(() => {
+        init(textRef.current, {
+            showCursor: true,
+            backDelay: 1500,
+            backSpeed: 60,
+            strings: [
+                'React',
+                'JavaScript',
+                'Material UI',
+                'CSS',
+                'HTML',
+                'SASS',
+                'Node JS',
+                'Git',
+                'MongoDB',
+                'PostgreSQL',
+                'Express JS'
+            ]
+        });
+    }, []);
+    const handleCurriculum = () => {
+        window.open('./assets/resume.pdf');
+    }
+    const handleContact = () => {
+        window.location.href = './#contact';
+    }
+    const handleLinkedIn = () => {
+        window.open('https://www.linkedin.com/in/nicolas-alejandro-venzmer/', '_blank');
+    }
+    const handleGithub = () => {
+        window.open('https://github.com/NicolasVenzmer', '_blank');
+    }
+    return (
+        <section id="profile">
+            <div className="section__pic-container">
+                <img src="./assets/profile-pic.png" alt="John Doe profile picture"/>
+            </div>
+            <div className="section__text">
+                <p className="section__text__p1">Hello, I'm</p>
+                <h1 className="title">Nicolas Venzmer</h1>
+                <p className="section__text__p2">Frontend Engineer<span ref={textRef}></span></p>
+                <div className="btn-container">
+                    <button
+                        className="btn btn-color-2"
+                        onClick={handleCurriculum}
+                    >
+                        Download CV
+                    </button>
+                    <button className="btn btn-color-1" onClick={handleContact}>
+                        Contact Info
+                    </button>
+                </div>
+                <div id="socials-container">
+                    <img
+                        src="./assets/linkedin.png"
+                        alt="My LinkedIn profile"
+                        className="icon"
+                        onClick={handleLinkedIn}
+                    />
+                    <img
+                        src="./assets/github.png"
+                        alt="My Github profile"
+                        className="icon"
+                        onClick={handleGithub}
+                    />
+                </div>
+            </div>
+        </section>
+    );
+}
+
+export default Profile;

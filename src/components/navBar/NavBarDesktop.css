@@ -1,0 +1,63 @@
+nav,
+.nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1200px) {
+    /* Hide the desktop nav and show the hamburger nav */
+    #desktop-nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* Adjust the nav-links and logo for smaller screens */
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .nav-links li a {
+        font-size: 1rem;
+    }
+}
