@@ -2,6 +2,7 @@
 
 #hamburger-nav {
     display: none;
+    justify-content: space-around;
 }
 
 .hamburger-menu {
@@ -98,6 +99,7 @@
 
     .logo {
         font-size: 1.5rem;
+        min-width: 70%;
     }
 
     .nav-links li a {
