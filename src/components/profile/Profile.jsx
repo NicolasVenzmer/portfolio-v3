@@ -3,7 +3,7 @@ import './Profile.css';
 import {init} from "ityped";
 
 const Profile = () => {
-    const textRef = useRef();
+    const textRef = useRef(null);
     useEffect(() => {
         init(textRef.current, {
             showCursor: true,
@@ -39,12 +39,13 @@ const Profile = () => {
     return (
         <section id="profile">
             <div className="section__pic-container">
-                <img src="./assets/profile-pic.png" alt="John Doe profile picture"/>
+                <img src="./assets/profile-pic.jpeg" alt="profile-pricture"/>
             </div>
             <div className="section__text">
                 <p className="section__text__p1">Hello, I'm</p>
                 <h1 className="title">Nicolas Venzmer</h1>
-                <p className="section__text__p2">Frontend Engineer<span ref={textRef}></span></p>
+                <p className="section__text__p2">Frontend Engineer</p>
+                <span ref={textRef}></span>
                 <div className="btn-container">
                     <button
                         className="btn btn-color-2"

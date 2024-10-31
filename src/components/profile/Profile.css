@@ -5,6 +5,10 @@
     height: 80vh;
 }
 
+img {
+    border-radius: 50%;
+}
+
 .section__pic-container {
     display: flex;
     height: 400px;
@@ -18,7 +22,6 @@
 }
 
 span {
-    margin-bottom: 1rem;
     font-size: 1.75rem;
 }
 
@@ -60,7 +63,7 @@ span {
     gap: 1rem;
 }
 
-/* Media queries for existing classes and IDs */
+/* Media queries */
 
 @media screen and (max-width: 1400px) {
     #profile {

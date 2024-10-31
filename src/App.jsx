@@ -6,12 +6,14 @@ import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import NavBarMobile from "./components/navBar/NavBarMobile";
+import Navigation from "./components/navigation/Navigation";
 
 const App = () => {
     return (
         <>
             <NavBarDesktop/>
             <NavBarMobile/>
+            <Navigation/>
             <Profile/>
             <About/>
             <Experience/>

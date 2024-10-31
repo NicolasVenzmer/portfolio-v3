@@ -82,11 +82,19 @@
     #projects {
         height: fit-content;
     }
+
+    .about-containers {
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (max-width: 1200px) {
     #projects {
         height: fit-content;
+    }
+
+    .about-containers {
+        flex-wrap: wrap;
     }
 }
 

@@ -1,0 +1,88 @@
+:root {
+    --navigator-offset: 5vh;
+}
+
+.navigator {
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+    bottom: 1rem;
+}
+
+.navigator a {
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    font-size: 1.1rem;
+}
+
+.navigator a:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.navigator a.active {
+    background: #4db5ff;
+    color: #ffffff;
+}
+
+.tooltip {
+    position: relative;
+    cursor: pointer;
+}
+
+/* Tooltip styling */
+.tooltip::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%; /* Position above the element */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    font-size: 0.85rem;
+}
+
+/* Arrow for tooltip */
+.tooltip::after {
+    content: "";
+    position: absolute;
+    bottom: var(--navigator-offset);
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+/* Show tooltip on hover */
+.tooltip:hover::before,
+.tooltip:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media screen and (max-width: 600px) {
+    .navigator {
+        bottom: 5rem;
+    }
+}
+
