@@ -27,7 +27,9 @@ const NavBarMobile = (props) => {
     }
     return (
         <nav id="hamburger-nav">
-            <div className="logo" ref={textRef}></div>
+            <div className="logo">
+                <span ref={textRef}></span>
+            </div>
             <div className="hamburger-menu">
                 <div className="hamburger-icon" onClick={handleMenu}>
                     <span></span>

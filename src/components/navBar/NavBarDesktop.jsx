@@ -20,7 +20,9 @@ const NavBarDesktop = () => {
     }, []);
     return (
         <nav id="desktop-nav">
-            <div className="logo" ref={textRef}></div>
+            <div className="logo">
+                <span ref={textRef}></span>
+            </div>
             <div>
                 <ul className="nav-links">
                     <li><a href="#about">About</a></li>

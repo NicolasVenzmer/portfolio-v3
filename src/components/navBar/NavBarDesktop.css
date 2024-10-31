@@ -29,6 +29,7 @@ a:hover {
 }
 
 .logo {
+    min-width: 30%;
     font-size: 2rem;
 }
 
