@@ -1,7 +1,24 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import './NavBarMobile.css';
+import {init} from "ityped";
 
-const NavBarMobile = () => {
+const NavBarMobile = (props) => {
+    const textRef = useRef();
+    useEffect(() => {
+        init(textRef.current, {
+            showCursor: true,
+            backDelay: 1500,
+            backSpeed: 60,
+            strings: [
+                "Welcome",
+                "Bienvenido",
+                "Bienvenue",
+                "Willkommen",
+                "Benvenuto",
+                "Bem-vindo",
+            ]
+        });
+    }, []);
     const handleMenu = () => {
         const menu = document.querySelector('.menu-links');
         const icon = document.querySelector('.hamburger-icon');
@@ -10,7 +27,7 @@ const NavBarMobile = () => {
     }
     return (
         <nav id="hamburger-nav">
-            <div className="logo">Welcome</div>
+            <div className="logo" ref={textRef}></div>
             <div className="hamburger-menu">
                 <div className="hamburger-icon" onClick={handleMenu}>
                     <span></span>
