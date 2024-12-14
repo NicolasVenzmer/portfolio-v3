@@ -7,7 +7,7 @@ const data = [
         icon: './assets/experience.png',
         alt: 'Experience icon',
         title: 'Experience',
-        description: ['2+ years', 'Frontend Development'],
+        description: ['3+ years', 'Frontend Development'],
     },
     {
         id: 2,
@@ -63,13 +63,7 @@ const About = () => {
                     </div>
                     <div className="text-container">
                         <p>
-                            Experienced Front-End Engineer with 2+ years of expertise
-                            in JavaScript and frameworks, transforming complex designs into
-                            optimized web applications. Fluent in English, Spanish, and
-                            intermediate in German. Degree in Information Technology Management. Passionate, proactive,
-                            and committed to continuous
-                            learning. Let's collaborate to build innovative web solutions and
-                            shape the future of technology.
+                            Experienced Frontend Engineer with a degree in Information Technology Management, specializing in React, Next.js, JavaScript, and Node.js to craft cutting-edge digital experiences. With over 3 years of expertise, I have transformed complex designs into optimized, user-friendly web applications and collaborated with backend engineers to integrate RESTful APIs. Additionally, I have worked alongside data scientists to harness and process data, implementing AI with Gen AI to drive innovation and deliver creative solutions. Fluent in English (advanced) and Spanish (native), I am passionate about leveraging technology's transformative power to revolutionize the tech landscape. I thrive on challenging norms and applying artificial intelligence to create impactful digital experiences. Let’s connect and shape the future of technology together!
                         </p>
                     </div>
                 </div>
