@@ -1,6 +1,8 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/navigation';
 import './Projects.css';
 
 const Projects = () => {
@@ -94,9 +96,10 @@ const Projects = () => {
             <p className="section__text__p1">Browse My Recent</p>
             <h1 className="title">Projects</h1>
             <Swiper
+                modules={[Navigation]}
                 spaceBetween={20}
                 slidesPerView={3}
-                navigation
+                navigation={true}
                 breakpoints={{
                     640: { slidesPerView: 1 },
                     768: { slidesPerView: 2 },
