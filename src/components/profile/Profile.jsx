@@ -1,6 +1,6 @@
-import React, {useEffect, useRef} from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Profile.css';
-import {init} from "ityped";
+import { init } from "ityped";
 
 const Profile = () => {
     const textRef = useRef(null);
@@ -11,7 +11,9 @@ const Profile = () => {
             backSpeed: 60,
             strings: [
                 'React',
+                'Next JS',
                 'JavaScript',
+                'TypeScript',
                 'Material UI',
                 'CSS',
                 'HTML',
@@ -39,7 +41,7 @@ const Profile = () => {
     return (
         <section id="profile">
             <div className="section__pic-container">
-                <img src="./assets/profile-pic.jpeg" alt="profile-pricture"/>
+                <img src="./assets/profile-pic.jpeg" alt="profile-pricture" />
             </div>
             <div className="section__text">
                 <p className="section__text__p1">Hello, I'm</p>
