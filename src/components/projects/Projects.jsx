@@ -1,4 +1,6 @@
 import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 import './Projects.css';
 
 const Projects = () => {
@@ -45,6 +47,20 @@ const Projects = () => {
         },
         {
             id: 3,
+            image: './assets/spotify-logo.png',
+            alt: 'spotify-logo',
+            title: 'Spotify Clone',
+            gitHub: {
+                title: 'Github',
+                url: "https://github.com/NicolasVenzmer/spotify-clone"
+            },
+            liveDemo: {
+                title: 'Live Demo',
+                url: "https://spotify-clone-25.netlify.app/"
+            }
+        },
+        {
+            id: 4,
             image: './assets/expenses-logo.png',
             alt: 'expenses-logo',
             title: 'My Expenses',
@@ -58,7 +74,7 @@ const Projects = () => {
             },
         },
         {
-            id: 4,
+            id: 5,
             image: './assets/employee-logo.png',
             alt: 'employee-logo',
             title: 'Employee Control',
@@ -77,40 +93,43 @@ const Projects = () => {
         <section id="projects">
             <p className="section__text__p1">Browse My Recent</p>
             <h1 className="title">Projects</h1>
-            <div className="experience-details-container">
-                <div className="about-containers">
-                    {data.map(({id, image, alt, title, gitHub, liveDemo}) => {
-                        return (
-                            <div className="details-container color-container" key={id}>
-                                <div className="article-container">
-                                    <img
-                                        src={image}
-                                        alt={alt}
-                                        className="project-img"
-                                    />
-                                </div>
-                                <div>
-                                    <h2 className="experience-sub-title project-title">{title}</h2>
-                                    <div className="btn-container">
-                                        <button
-                                            className="btn btn-color-2 project-btn"
-                                            onClick={() => handleGitHub(gitHub.url)} // Pass the GitHub URL
-                                        >
-                                            {gitHub.title}
-                                        </button>
-                                        <button
-                                            className="btn btn-color-2 project-btn"
-                                            onClick={() => handleLiveDemo(liveDemo.url)} // Pass the Live Demo URL
-                                        >
-                                            {liveDemo.title}
-                                        </button>
-                                    </div>
+            <Swiper
+                spaceBetween={20}
+                slidesPerView={3}
+                navigation
+                breakpoints={{
+                    640: { slidesPerView: 1 },
+                    768: { slidesPerView: 2 },
+                    1024: { slidesPerView: 3 },
+                }}
+            >
+                {data.map(({ id, image, alt, title, gitHub, liveDemo }) => (
+                    <SwiperSlide key={id}>
+                        <div className="details-container color-container">
+                            <div className="article-container">
+                                <img src={image} alt={alt} className="project-img" />
+                            </div>
+                            <div>
+                                <h2 className="experience-sub-title project-title">{title}</h2>
+                                <div className="btn-container">
+                                    <button
+                                        className="btn btn-color-2 project-btn"
+                                        onClick={() => handleGitHub(gitHub.url)}
+                                    >
+                                        {gitHub.title}
+                                    </button>
+                                    <button
+                                        className="btn btn-color-2 project-btn"
+                                        onClick={() => handleLiveDemo(liveDemo.url)}
+                                    >
+                                        {liveDemo.title}
+                                    </button>
                                 </div>
                             </div>
-                        );
-                    })}
-                </div>
-            </div>
+                        </div>
+                    </SwiperSlide>
+                ))}
+            </Swiper>
             <img
                 src="./assets/arrow.png"
                 alt="Arrow icon"
