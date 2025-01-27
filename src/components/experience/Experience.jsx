@@ -14,21 +14,26 @@ const frontend = [
     },
     {
         id: 3,
-        name: 'Material UI',
+        name: 'TypeScript',
         level: 'Experienced',
     },
     {
         id: 4,
-        name: 'CSS',
+        name: 'Material UI',
         level: 'Experienced',
     },
     {
         id: 5,
-        name: 'HTML',
+        name: 'CSS',
         level: 'Experienced',
     },
     {
         id: 6,
+        name: 'HTML',
+        level: 'Experienced',
+    },
+    {
+        id: 7,
         name: 'SASS',
         level: 'Intermediate',
     },
