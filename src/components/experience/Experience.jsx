@@ -24,18 +24,18 @@ const frontend = [
     },
     {
         id: 5,
-        name: 'CSS',
+        name: 'Tailwind',
         level: 'Experienced',
     },
     {
         id: 6,
-        name: 'HTML',
+        name: 'CSS',
         level: 'Experienced',
     },
     {
         id: 7,
-        name: 'SASS',
-        level: 'Intermediate',
+        name: 'HTML',
+        level: 'Experienced',
     },
 ]
 

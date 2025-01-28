@@ -15,6 +15,11 @@
     flex-direction: column;
 }
 
+.details-container {
+    display: flex;
+    justify-content: flex-start !important;
+}
+
 .article-container {
     display: flex;
     text-align: initial;
@@ -95,6 +100,7 @@ article .icon {
 }
 
 @media screen and (max-width: 600px) {
+
     #contact,
     footer {
         height: 40vh;
