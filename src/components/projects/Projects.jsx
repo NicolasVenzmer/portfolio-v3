@@ -30,8 +30,9 @@ const Projects = () => {
             },
             liveDemo: {
                 title: 'Live Demo',
-                url: "https://netflix-clone-dca91.web.app/",
+                url: "https://net-21.netlify.app/",
             },
+        
         },
         {
             id: 2,
