@@ -1,21 +1,24 @@
 import React from 'react';
 import './Footer.css';
+import { useLanguage } from '../../context/LanguageContext';
 
 function Footer(props) {
+    const { t } = useLanguage();
+
     return (
         <footer>
             <nav>
                 <div className="nav-links-container">
                     <ul className="nav-links">
-                        <li><a href="#profile">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#profile">{t('footer.home')}</a></li>
+                        <li><a href="#about">{t('footer.about')}</a></li>
+                        <li><a href="#experience">{t('footer.experience')}</a></li>
+                        <li><a href="#projects">{t('footer.projects')}</a></li>
+                        <li><a href="#contact">{t('footer.contact')}</a></li>
                     </ul>
                 </div>
             </nav>
-            <p>Copyright &#169; 2024 Nicolas Venzmer. All Rights Reserved.</p>
+            <p>{t('footer.copyright')}</p>
         </footer>
     );
 }

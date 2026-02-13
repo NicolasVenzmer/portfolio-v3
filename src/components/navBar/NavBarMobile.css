@@ -53,7 +53,13 @@
 }
 
 .menu-links.open {
-    max-height: 300px;
+    max-height: 400px;
+}
+
+.mobile-lang-toggle {
+    padding: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
 }
 
 .hamburger-icon.open span:first-child {

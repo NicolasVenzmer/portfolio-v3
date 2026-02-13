@@ -1,0 +1,87 @@
+{
+  "navbar": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "profile": {
+    "greeting": "Hello, I'm",
+    "title": "Full Stack Engineer",
+    "downloadCV": "Download CV",
+    "contactInfo": "Contact Info",
+    "linkedinAlt": "My LinkedIn profile",
+    "githubAlt": "My Github profile",
+    "technologies": [
+      "React",
+      "Next JS",
+      "JavaScript",
+      "TypeScript",
+      "Material UI",
+      "Tailwind CSS",
+      "CSS",
+      "HTML",
+      "Node JS",
+      "Git & GitHub",
+      "PostgreSQL",
+      "Express JS",
+      "AWS",
+      "Google Cloud"
+    ]
+  },
+  "about": {
+    "sectionTitle": "Get To Know More",
+    "heading": "About Me",
+    "experience": {
+      "title": "Experience",
+      "alt": "Experience icon",
+      "years": "4+ years",
+      "field": "Full Stack Development"
+    },
+    "education": {
+      "title": "Education",
+      "alt": "Education icon",
+      "degree": "Bachelor's Degree in Information Technology Management"
+    },
+    "interests": {
+      "title": "Interests",
+      "alt": "Interests icon",
+      "items": ["Technology", "Finance", "Science"]
+    },
+    "bio": "I'm a Full Stack Engineer with a background in Information Technology Management, building modern, scalable web applications from end to end. Over the past 4+ years, I've worked across frontend and backend, turning complex business requirements into reliable, high-quality digital products. I've contributed to cloud-based applications using React, Next.js, Node.js, and AWS, collaborating closely with designers, backend engineers, data teams, and stakeholders to deliver secure and performant solutions. From building API-driven platforms and automation tools to implementing authentication systems and CI/CD pipelines, I enjoy owning features across the full development lifecycle. My journey started in data architecture, which shaped the way I think about systems: scalable, structured, and designed for long-term impact. Today, I focus on building products that not only work — but create real value for users and businesses. Fluent in English and Spanish, I'm driven by curiosity, continuous learning, and the challenge of building technology that solves meaningful problems.",
+    "profilePicAlt": "Profile picture"
+  },
+  "experience": {
+    "sectionTitle": "Explore My",
+    "heading": "Experience",
+    "frontend": "Frontend Development",
+    "backend": "Backend Development",
+    "level": "Experienced",
+    "iconAlt": "Experience icon"
+  },
+  "projects": {
+    "sectionTitle": "Browse My Recent",
+    "heading": "Projects",
+    "github": "Github",
+    "liveDemo": "Live Demo"
+  },
+  "contact": {
+    "sectionTitle": "Get in Touch",
+    "heading": "Contact Me"
+  },
+  "footer": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact",
+    "copyright": "Copyright © 2024 Nicolas Venzmer. All Rights Reserved."
+  },
+  "navigation": {
+    "homeTooltip": "Home",
+    "aboutTooltip": "About",
+    "experienceTooltip": "Experience",
+    "projectsTooltip": "Projects",
+    "contactTooltip": "Contact"
+  }
+}

@@ -5,6 +5,7 @@ import {BiSolidMessageDetail} from "react-icons/bi";
 import {MdWork} from "react-icons/md";
 import {HiHome} from "react-icons/hi";
 import {MdLanguage} from "react-icons/md";
+import { useLanguage } from "../../context/LanguageContext";
 
 const updateNavigatorOffset = () => {
     const offset = window.innerHeight * 0.05;
@@ -12,6 +13,7 @@ const updateNavigatorOffset = () => {
 };
 
 const Navigation = () => {
+    const { t } = useLanguage();
     const [activeNav, setActiveNav] = useState("#");
     const [showNavigator, setShowNavigator] = useState(true);
 
@@ -54,7 +56,7 @@ const Navigation = () => {
     return (
         showNavigator && (
             <div className="navigator">
-                <div className="tooltip" data-tooltip="Home">
+                <div className="tooltip" data-tooltip={t('navigation.homeTooltip')}>
                     <a
                         href="#"
                         onClick={() => setActiveNav("#")}
@@ -63,7 +65,7 @@ const Navigation = () => {
                         <HiHome/>
                     </a>
                 </div>
-                <div className="tooltip" data-tooltip="About">
+                <div className="tooltip" data-tooltip={t('navigation.aboutTooltip')}>
                     <a
                         href="#about"
                         onClick={() => setActiveNav("#about")}
@@ -72,7 +74,7 @@ const Navigation = () => {
                         <FaBook/>
                     </a>
                 </div>
-                <div className="tooltip" data-tooltip="Experience">
+                <div className="tooltip" data-tooltip={t('navigation.experienceTooltip')}>
                     <a
                         href="#experience"
                         onClick={() => setActiveNav("#experience")}
@@ -81,7 +83,7 @@ const Navigation = () => {
                         <MdWork/>
                     </a>
                 </div>
-                <div className="tooltip" data-tooltip="Projects">
+                <div className="tooltip" data-tooltip={t('navigation.projectsTooltip')}>
                     <a
                         href="#projects"
                         onClick={() => setActiveNav("#projects")}
@@ -90,7 +92,7 @@ const Navigation = () => {
                         <MdLanguage/>
                     </a>
                 </div>
-                <div className="tooltip" data-tooltip="Contact">
+                <div className="tooltip" data-tooltip={t('navigation.contactTooltip')}>
                     <a
                         href="#contact"
                         onClick={() => setActiveNav("#contact")}

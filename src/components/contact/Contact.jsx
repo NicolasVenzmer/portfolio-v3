@@ -1,5 +1,6 @@
 import React from "react";
 import "./Contact.css";
+import { useLanguage } from "../../context/LanguageContext";
 
 const data = [
   {
@@ -21,10 +22,12 @@ const data = [
 ];
 
 const Contact = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="contact">
-      <p className="section__text__p1">Get in Touch</p>
-      <h1 className="title">Contact Me</h1>
+      <p className="section__text__p1">{t('contact.sectionTitle')}</p>
+      <h1 className="title">{t('contact.heading')}</h1>
       <div className="contact-info-upper-container">
         {data.map((item) => (
           <div className="contact-info-container" key={item.id}>

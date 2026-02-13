@@ -4,8 +4,11 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import './Projects.css';
+import { useLanguage } from '../../context/LanguageContext';
 
 const Projects = () => {
+    const { t } = useLanguage();
+
     const handleGitHub = (url) => {
         window.open(url, '_blank');
     };
@@ -25,14 +28,14 @@ const Projects = () => {
             alt: 'netflix-logo',
             title: 'Netflix Clone',
             gitHub: {
-                title: 'Github',
+                title: t('projects.github'),
                 url: "https://github.com/NicolasVenzmer/netflix-clone",
             },
             liveDemo: {
-                title: 'Live Demo',
+                title: t('projects.liveDemo'),
                 url: "https://net-21.netlify.app/",
             },
-        
+
         },
         {
             id: 2,
@@ -40,11 +43,11 @@ const Projects = () => {
             alt: 'amazon-logo',
             title: 'Amazon Clone',
             gitHub: {
-                title: 'Github',
+                title: t('projects.github'),
                 url: "https://github.com/NicolasVenzmer/amazon-clone",
             },
             liveDemo: {
-                title: 'Live Demo',
+                title: t('projects.liveDemo'),
                 url: "https://amazon-clone0.netlify.app/",
             },
         },
@@ -54,11 +57,11 @@ const Projects = () => {
             alt: 'spotify-logo',
             title: 'Spotify Clone',
             gitHub: {
-                title: 'Github',
+                title: t('projects.github'),
                 url: "https://github.com/NicolasVenzmer/spotify-clone"
             },
             liveDemo: {
-                title: 'Live Demo',
+                title: t('projects.liveDemo'),
                 url: "https://spotify-clone-25.netlify.app/"
             }
         },
@@ -68,11 +71,11 @@ const Projects = () => {
             alt: 'expenses-logo',
             title: 'My Expenses',
             gitHub: {
-                title: 'Github',
+                title: t('projects.github'),
                 url: "https://github.com/NicolasVenzmer/AplicacionPresupuesto",
             },
             liveDemo: {
-                title: 'Live Demo',
+                title: t('projects.liveDemo'),
                 url: "https://tusgastosdiarios.netlify.app/",
             },
         },
@@ -82,11 +85,11 @@ const Projects = () => {
             alt: 'employee-logo',
             title: 'Employee Control',
             gitHub: {
-                title: 'Github',
+                title: t('projects.github'),
                 url: "https://github.com/NicolasVenzmer/ControlDeEmpleados"
             },
             liveDemo: {
-                title: 'Live Demo',
+                title: t('projects.liveDemo'),
                 url: "https://control-clientes-73292.web.app/home"
             }
         }
@@ -94,8 +97,8 @@ const Projects = () => {
 
     return (
         <section id="projects">
-            <p className="section__text__p1">Browse My Recent</p>
-            <h1 className="title">Projects</h1>
+            <p className="section__text__p1">{t('projects.sectionTitle')}</p>
+            <h1 className="title">{t('projects.heading')}</h1>
             <Swiper
                 modules={[Navigation]}
                 spaceBetween={20}

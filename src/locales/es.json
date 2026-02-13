@@ -1,0 +1,87 @@
+{
+  "navbar": {
+    "about": "Acerca de",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "profile": {
+    "greeting": "Hola, soy",
+    "title": "Ingeniero Full Stack",
+    "downloadCV": "Descargar CV",
+    "contactInfo": "Información de Contacto",
+    "linkedinAlt": "Mi perfil de LinkedIn",
+    "githubAlt": "Mi perfil de Github",
+    "technologies": [
+      "React",
+      "Next JS",
+      "JavaScript",
+      "TypeScript",
+      "Material UI",
+      "Tailwind CSS",
+      "CSS",
+      "HTML",
+      "Node JS",
+      "Git & GitHub",
+      "PostgreSQL",
+      "Express JS",
+      "AWS",
+      "Google Cloud"
+    ]
+  },
+  "about": {
+    "sectionTitle": "Conoce Más Sobre",
+    "heading": "Mí",
+    "experience": {
+      "title": "Experiencia",
+      "alt": "Icono de experiencia",
+      "years": "Más de 4 años",
+      "field": "Desarrollo Full Stack"
+    },
+    "education": {
+      "title": "Educación",
+      "alt": "Icono de educación",
+      "degree": "Licenciatura en Gestión de Tecnologías de la Información"
+    },
+    "interests": {
+      "title": "Intereses",
+      "alt": "Icono de intereses",
+      "items": ["Tecnología", "Finanzas", "Ciencia"]
+    },
+    "bio": "Soy un Ingeniero Full Stack con experiencia en Gestión de Tecnologías de la Información, especializado en construir aplicaciones web modernas y escalables de principio a fin. Durante los últimos 4+ años, he trabajado en frontend y backend, transformando requisitos empresariales complejos en productos digitales confiables y de alta calidad. He contribuido a aplicaciones basadas en la nube utilizando React, Next.js, Node.js y AWS, colaborando estrechamente con diseñadores, ingenieros de backend, equipos de datos y stakeholders para entregar soluciones seguras y de alto rendimiento. Desde la construcción de plataformas impulsadas por API y herramientas de automatización hasta la implementación de sistemas de autenticación y pipelines de CI/CD, disfruto asumir la responsabilidad de las funcionalidades a lo largo de todo el ciclo de desarrollo. Mi trayectoria comenzó en arquitectura de datos, lo que moldeó mi forma de pensar sobre sistemas: escalables, estructurados y diseñados para un impacto a largo plazo. Hoy en día, me enfoco en construir productos que no solo funcionen, sino que creen valor real para usuarios y empresas. Fluido en inglés y español, me impulsa la curiosidad, el aprendizaje continuo y el desafío de construir tecnología que resuelva problemas significativos.",
+    "profilePicAlt": "Foto de perfil"
+  },
+  "experience": {
+    "sectionTitle": "Explora Mi",
+    "heading": "Experiencia",
+    "frontend": "Desarrollo Frontend",
+    "backend": "Desarrollo Backend",
+    "level": "Experimentado",
+    "iconAlt": "Icono de experiencia"
+  },
+  "projects": {
+    "sectionTitle": "Explora Mis Proyectos",
+    "heading": "Recientes",
+    "github": "Github",
+    "liveDemo": "Demo en Vivo"
+  },
+  "contact": {
+    "sectionTitle": "Ponte en Contacto",
+    "heading": "Contáctame"
+  },
+  "footer": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "copyright": "Copyright © 2024 Nicolas Venzmer. Todos los Derechos Reservados."
+  },
+  "navigation": {
+    "homeTooltip": "Inicio",
+    "aboutTooltip": "Acerca de",
+    "experienceTooltip": "Experiencia",
+    "projectsTooltip": "Proyectos",
+    "contactTooltip": "Contacto"
+  }
+}
